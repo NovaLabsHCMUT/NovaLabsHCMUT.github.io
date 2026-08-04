@@ -1,5 +1,5 @@
 # NovaLabs Website — Hướng dẫn sử dụng
-
+https://novalabshcmut.github.io/home/
 ## Cấu trúc thư mục
 
 ```
