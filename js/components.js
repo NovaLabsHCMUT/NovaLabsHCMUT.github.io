@@ -28,7 +28,7 @@ const PHONE_ICON_SVG =
 
 // NOTE: Logo <img> tags intentionally have NO inline onerror here — the
 // global image-fallback system below (initImageFallbacks) handles them and
-// swaps in a clean NovaLabs wordmark automatically if asset/logo.jpg is
+// swaps in a clean NovaLabs wordmark automatically if assets/logo.jpg is
 // missing, so the logo never just "disappears".
 const HEADER_HTML = `
 <div class="top-bar">
@@ -133,14 +133,14 @@ function initMobileMenu() {
    generates a clean inline placeholder graphic instead of showing a
    broken-image icon, so the site never looks broken.
 
-   Uses the 'error' event in the CAPTURING phase on `document`, which
+   Uses the 'error' event in the CAPTURING phase on \`document\`, which
    fires for every <img> on the page (img error events do not bubble,
    but capturing still reaches them) — this runs before any other
    handler and needs no changes to about.html / contact.html /
    projects.html / services.html.
 
    To restore real images: just add the real files with the EXACT
-   filenames referenced in each page (see asset/, project/, service/
+   filenames referenced in each page (see assets/, project/, service/
    folders and README.md) — no code changes needed, the real image
    will simply load instead of the placeholder.
    ================================================================ */
