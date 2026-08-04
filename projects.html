@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NovaLabs - Du an</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="projects">
+
+<div id="site-header"></div>
+
+<div class="page-hero">
+  <div class="page-hero-inner">
+    <div class="page-hero-label">Du an noi bat</div>
+    <h1>Du an cua NovaLabs</h1>
+    <p>Nhung san pham ky thuat thuc te do NovaLabs nghien cuu va che tao</p>
+  </div>
+</div>
+
+<section id="projects-page">
+  <div class="section-inner">
+    <div class="projects-grid">
+
+      <div class="project-card">
+        <div class="slider-wrap">
+          <div class="slider-track" id="track-agv">
+            <img src="project/project_agv.jpg" alt="AGV" onclick="openLightbox(this.src)">
+            <img src="project/project_agv1.jpg" alt="AGV" onclick="openLightbox(this.src)">
+            <img src="project/project_agv2.jpg" alt="AGV" onclick="openLightbox(this.src)">
+          </div>
+          <div class="slider-nav">
+            <button class="slider-btn" onclick="slide('agv',-1)">&larr;</button>
+            <button class="slider-btn" onclick="slide('agv',1)">&rarr;</button>
+          </div>
+          <div class="slider-dots" id="dots-agv"></div>
+        </div>
+        <div class="project-card-body">
+          <h3>AGV - Autonomous Guided Vehicle</h3>
+          <p>Robot van chuyen tu hanh, dieu huong bang cam bien LIDAR va thuat toan SLAM de lap ban do va tu dinh vi trong moi truong kho bai, nha may.</p>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="slider-wrap">
+          <div class="slider-track" id="track-drone">
+            <img src="project/project_drone.jpg" alt="Drone" onclick="openLightbox(this.src)">
+          </div>
+        </div>
+        <div class="project-card-body">
+          <h3>Drone</h3>
+          <p>May bay khong nguoi lai duoc thiet ke va lap trinh noi bo, tich hop he thong dieu khien bay va truyen du lieu thoi gian thuc.</p>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="slider-wrap">
+          <div class="slider-track" id="track-hexapod">
+            <img src="project/project_hexapod.jpg" alt="Hexapod" onclick="openLightbox(this.src)">
+            <img src="project/project_hexapod2.jpg" alt="Hexapod" onclick="openLightbox(this.src)">
+            <img src="project/project_hexapod3.jpg" alt="Hexapod" onclick="openLightbox(this.src)">
+          </div>
+          <div class="slider-nav">
+            <button class="slider-btn" onclick="slide('hexapod',-1)">&larr;</button>
+            <button class="slider-btn" onclick="slide('hexapod',1)">&rarr;</button>
+          </div>
+          <div class="slider-dots" id="dots-hexapod"></div>
+        </div>
+        <div class="project-card-body">
+          <h3>Hexapod Robot</h3>
+          <p>Robot 6 chan mo phong chuyen dong con trung, ung dung thuat toan dang di va dieu khien dong hoc nghich de di chuyen tren dia hinh phuc tap.</p>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="slider-wrap">
+          <div class="slider-track" id="track-arm">
+            <img src="project/project_robotarm.jpg" alt="Robot Arm" onclick="openLightbox(this.src)">
+            <img src="project/project_robotarm2.jpg" alt="Robot Arm" onclick="openLightbox(this.src)">
+            <img src="project/project_robotarm3.jpg" alt="Robot Arm" onclick="openLightbox(this.src)">
+          </div>
+          <div class="slider-nav">
+            <button class="slider-btn" onclick="slide('arm',-1)">&larr;</button>
+            <button class="slider-btn" onclick="slide('arm',1)">&rarr;</button>
+          </div>
+          <div class="slider-dots" id="dots-arm"></div>
+        </div>
+        <div class="project-card-body">
+          <h3>Robot Arm</h3>
+          <p>Canh tay robot nhieu bac tu do, lap trinh dieu khien theo quy dao, phu hop cho cac ung dung lap rap va pick-and-place.</p>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="slider-wrap">
+          <div class="slider-track" id="track-pneumatic">
+            <img src="project/project_robotpneumatic.jpg" alt="Robot Pneumatic" onclick="openLightbox(this.src)">
+            <img src="project/project_robotpneumatic2.jpg" alt="Robot Pneumatic" onclick="openLightbox(this.src)">
+          </div>
+          <div class="slider-nav">
+            <button class="slider-btn" onclick="slide('pneumatic',-1)">&larr;</button>
+            <button class="slider-btn" onclick="slide('pneumatic',1)">&rarr;</button>
+          </div>
+          <div class="slider-dots" id="dots-pneumatic"></div>
+        </div>
+        <div class="project-card-body">
+          <h3>Robot Pneumatic</h3>
+          <p>He thong robot khi nen dieu khien co cau chuyen dong qua xi-lanh va van dien tu, ung dung trong day chuyen san xuat tu dong.</p>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="slider-wrap">
+          <div class="slider-track" id="track-twin">
+            <img src="project/project_robottwin.jpg" alt="Robot Twin" onclick="openLightbox(this.src)">
+            <img src="project/project_robottwin2.jpg" alt="Robot Twin" onclick="openLightbox(this.src)">
+            <img src="project/project_robottwin3.jpg" alt="Robot Twin" onclick="openLightbox(this.src)">
+          </div>
+          <div class="slider-nav">
+            <button class="slider-btn" onclick="slide('twin',-1)">&larr;</button>
+            <button class="slider-btn" onclick="slide('twin',1)">&rarr;</button>
+          </div>
+          <div class="slider-dots" id="dots-twin"></div>
+        </div>
+        <div class="project-card-body">
+          <h3>Robot Twin</h3>
+          <p>He thong digital twin mo phong va giam sat robot trong moi truong ao theo thoi gian thuc, ho tro kiem thu thuat toan truoc khi trien khai thuc te.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section class="cta-section">
+  <div class="section-inner cta-inner">
+    <h2>Thich nhung du an nay?</h2>
+    <p>Hay lien he de cung NovaLabs hien thuc hoa y tuong tiep theo cua ban.</p>
+    <a href="contact.html" class="btn-zalo-lg">Lien he ngay &rarr;</a>
+  </div>
+</section>
+
+<div id="site-footer"></div>
+
+<div class="lightbox" id="lightbox" onclick="closeLightbox()">
+  <button class="lightbox-close" onclick="closeLightbox()">&times;</button>
+  <img id="lightbox-img" src="" alt="Preview">
+</div>
+
+<script src="js/components.js"></script>
+<script src="js/slider.js"></script>
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    initManualSlider('agv', 3);
+    initManualSlider('hexapod', 3);
+    initManualSlider('arm', 3);
+    initManualSlider('pneumatic', 2);
+    initManualSlider('twin', 3);
+  });
+</script>
+</body>
+</html>
