@@ -33,7 +33,7 @@ img { max-width: 100%; }
 .navbar { position: sticky; top: 0; z-index: 1000; background: var(--white); border-bottom: 1px solid #E6E5E3; box-shadow: 0 1px 8px rgba(0,0,0,.06); }
 .navbar-inner { max-width: 1120px; margin: 0 auto; padding: 0 24px; display: flex; align-items: center; justify-content: space-between; height: 84px; }
 .logo { display: flex; align-items: center; gap: 12px; text-decoration: none; }
-.logo-img { height: 56px; width: auto; object-fit: contain; display: block; }
+.logo-img {border-radius: 12px; height: 56px; width: auto; object-fit: contain; display: block; }
 .footer-brand .logo-img { height: 34px; }
 .logo-text { font-size: 1.5rem; font-weight: 800; letter-spacing: 0.3px; color: var(--dark); line-height: 1; white-space: nowrap; }
 .logo-text .accent { color: var(--red); }
