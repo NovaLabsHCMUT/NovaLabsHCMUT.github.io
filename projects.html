@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NovaLabs — Dự án</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="projects">
+
+<div id="site-header"></div>
+
+<div class="page-hero">
+  <div class="page-hero-inner">
+    <div class="page-hero-label">Dự án nổi bật</div>
+    <h1>Dự án của NovaLabs</h1>
+    <p>Những sản phẩm kỹ thuật thực tế do NovaLabs nghiên cứu và chế tạo, từ ý tưởng đến nguyên mẫu hoàn chỉnh.</p>
+  </div>
+</div>
+
+<section id="projects-page">
+  <div class="section-inner">
+    <div class="projects-grid">
+
+      <div class="project-card">
+        <div class="slider-wrap">
+          <div class="slider-track" id="track-agv">
+            <img src="project/project_agv.jpg" alt="AGV" onclick="openLightbox(this.src)">
+            <img src="project/project_agv1.jpg" alt="AGV" onclick="openLightbox(this.src)">
+            <img src="project/project_agv2.jpg" alt="AGV" onclick="openLightbox(this.src)">
+          </div>
+          <div class="slider-nav">
+            <button class="slider-btn" onclick="slide('agv',-1)">&larr;</button>
+            <button class="slider-btn" onclick="slide('agv',1)">&rarr;</button>
+          </div>
+          <div class="slider-dots" id="dots-agv"></div>
+        </div>
+        <div class="project-card-body">
+          <h3>AGV — Autonomous Guided Vehicle</h3>
+          <p>Robot vận chuyển tự hành, sử dụng cảm biến LIDAR và thuật toán SLAM để lập bản đồ và tự định vị chính xác trong môi trường nhà máy, kho bãi.</p>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="slider-wrap">
+          <div class="slider-track" id="track-drone">
+            <img src="project/project_drone.jpg" alt="Drone" onclick="openLightbox(this.src)">
+          </div>
+        </div>
+        <div class="project-card-body">
+          <h3>Drone</h3>
+          <p>Máy bay không người lái được thiết kế và lập trình nội bộ, tích hợp hệ thống điều khiển bay và truyền dữ liệu thời gian thực.</p>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="slider-wrap">
+          <div class="slider-track" id="track-hexapod">
+            <img src="project/project_hexapod.jpg" alt="Hexapod" onclick="openLightbox(this.src)">
+            <img src="project/project_hexapod2.jpg" alt="Hexapod" onclick="openLightbox(this.src)">
+            <img src="project/project_hexapod3.jpg" alt="Hexapod" onclick="openLightbox(this.src)">
+          </div>
+          <div class="slider-nav">
+            <button class="slider-btn" onclick="slide('hexapod',-1)">&larr;</button>
+            <button class="slider-btn" onclick="slide('hexapod',1)">&rarr;</button>
+          </div>
+          <div class="slider-dots" id="dots-hexapod"></div>
+        </div>
+        <div class="project-card-body">
+          <h3>Hexapod Robot</h3>
+          <p>Robot sáu chân mô phỏng chuyển động côn trùng, ứng dụng thuật toán dáng đi và điều khiển động học nghịch để di chuyển linh hoạt trên địa hình phức tạp.</p>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="slider-wrap">
+          <div class="slider-track" id="track-arm">
+            <img src="project/project_robotarm.jpg" alt="Robot Arm" onclick="openLightbox(this.src)">
+            <img src="project/project_robotarm2.jpg" alt="Robot Arm" onclick="openLightbox(this.src)">
+            <img src="project/project_robotarm3.jpg" alt="Robot Arm" onclick="openLightbox(this.src)">
+          </div>
+          <div class="slider-nav">
+            <button class="slider-btn" onclick="slide('arm',-1)">&larr;</button>
+            <button class="slider-btn" onclick="slide('arm',1)">&rarr;</button>
+          </div>
+          <div class="slider-dots" id="dots-arm"></div>
+        </div>
+        <div class="project-card-body">
+          <h3>Robot Arm</h3>
+          <p>Cánh tay robot nhiều bậc tự do, lập trình điều khiển theo quỹ đạo, phù hợp cho các ứng dụng lắp ráp và gắp–thả (pick-and-place).</p>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="slider-wrap">
+          <div class="slider-track" id="track-pneumatic">
+            <img src="project/project_robotpneumatic.jpg" alt="Robot Pneumatic" onclick="openLightbox(this.src)">
+            <img src="project/project_robotpneumatic2.jpg" alt="Robot Pneumatic" onclick="openLightbox(this.src)">
+          </div>
+          <div class="slider-nav">
+            <button class="slider-btn" onclick="slide('pneumatic',-1)">&larr;</button>
+            <button class="slider-btn" onclick="slide('pneumatic',1)">&rarr;</button>
+          </div>
+          <div class="slider-dots" id="dots-pneumatic"></div>
+        </div>
+        <div class="project-card-body">
+          <h3>Robot Pneumatic</h3>
+          <p>Hệ thống robot khí nén điều khiển cơ cấu chuyển động qua xi-lanh và van điện từ, ứng dụng trong dây chuyền sản xuất tự động.</p>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="slider-wrap">
+          <div class="slider-track" id="track-twin">
+            <img src="project/project_robottwin.jpg" alt="Robot Twin" onclick="openLightbox(this.src)">
+            <img src="project/project_robottwin2.jpg" alt="Robot Twin" onclick="openLightbox(this.src)">
+            <img src="project/project_robottwin3.jpg" alt="Robot Twin" onclick="openLightbox(this.src)">
+          </div>
+          <div class="slider-nav">
+            <button class="slider-btn" onclick="slide('twin',-1)">&larr;</button>
+            <button class="slider-btn" onclick="slide('twin',1)">&rarr;</button>
+          </div>
+          <div class="slider-dots" id="dots-twin"></div>
+        </div>
+        <div class="project-card-body">
+          <h3>Robot Twin</h3>
+          <p>Hệ thống digital twin mô phỏng và giám sát robot trong môi trường ảo theo thời gian thực, hỗ trợ kiểm thử thuật toán trước khi triển khai thực tế.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section class="cta-section">
+  <div class="section-inner cta-inner">
+    <h2>Bạn quan tâm đến những dự án này?</h2>
+    <p>Hãy liên hệ để cùng NovaLabs hiện thực hóa ý tưởng tiếp theo của bạn.</p>
+    <a href="contact.html" class="btn-zalo-lg">Liên hệ ngay &rarr;</a>
+  </div>
+</section>
+
+<div id="site-footer"></div>
+
+<div class="lightbox" id="lightbox" onclick="closeLightbox()">
+  <button class="lightbox-close" onclick="closeLightbox()">&times;</button>
+  <img id="lightbox-img" src="" alt="Preview">
+</div>
+
+<script src="js/components.js"></script>
+<script src="js/slider.js"></script>
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    initManualSlider('agv', 3);
+    initManualSlider('hexapod', 3);
+    initManualSlider('arm', 3);
+    initManualSlider('pneumatic', 2);
+    initManualSlider('twin', 3);
+  });
+</script>
+</body>
+</html>
