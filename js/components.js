@@ -153,20 +153,20 @@ function svgToDataUri(svg) {
 function makeLogoDataUri(onDark) {
   const red = "#C8102E";
   const textColor = onDark ? "#ffffff" : "#20242A";
-  const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="180" height="60" viewBox="0 0 180 60">
+  const svg = \`<svg xmlns="http://www.w3.org/2000/svg" width="180" height="60" viewBox="0 0 180 60">
     <g transform="translate(4,4)">
-      <path d="M26 0 50 13v26L26 52 2 39V13z" fill="${red}"/>
+      <path d="M26 0 50 13v26L26 52 2 39V13z" fill="\${red}"/>
       <circle cx="26" cy="26" r="9" fill="#ffffff"/>
-      <circle cx="26" cy="26" r="3.2" fill="${red}"/>
+      <circle cx="26" cy="26" r="3.2" fill="\${red}"/>
       <path d="M26 16v-5M26 41v-5M16 26h-5M41 26h-5" stroke="#ffffff" stroke-width="2.2" stroke-linecap="round"/>
     </g>
-    <text x="64" y="37" font-family="Segoe UI, Arial, sans-serif" font-size="26" font-weight="800" fill="${textColor}">Nova<tspan fill="${red}">Labs</tspan></text>
-  </svg>`;
+    <text x="64" y="37" font-family="Segoe UI, Arial, sans-serif" font-size="26" font-weight="800" fill="\${textColor}">Nova<tspan fill="\${red}">Labs</tspan></text>
+  </svg>\`;
   return svgToDataUri(svg);
 }
 
 function makeHeroBgDataUri() {
-  const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900">
+  const svg = \`<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900">
     <defs>
       <radialGradient id="r1" cx="20%" cy="20%" r="55%"><stop offset="0" stop-color="#C8102E" stop-opacity=".38"/><stop offset="1" stop-color="#C8102E" stop-opacity="0"/></radialGradient>
       <radialGradient id="r2" cx="85%" cy="80%" r="50%"><stop offset="0" stop-color="#C8102E" stop-opacity=".28"/><stop offset="1" stop-color="#C8102E" stop-opacity="0"/></radialGradient>
@@ -175,7 +175,7 @@ function makeHeroBgDataUri() {
     <rect width="1600" height="900" fill="url(#base)"/>
     <rect width="1600" height="900" fill="url(#r1)"/>
     <rect width="1600" height="900" fill="url(#r2)"/>
-  </svg>`;
+  </svg>\`;
   return svgToDataUri(svg);
 }
 
@@ -183,16 +183,16 @@ function makePlaceholderDataUri(label) {
   const w = 400, h = 300;
   const safe = String(label).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
   const short = safe.length > 40 ? "…" + safe.slice(-38) : safe;
-  const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="${w}" height="${h}" viewBox="0 0 ${w} ${h}">
+  const svg = \`<svg xmlns="http://www.w3.org/2000/svg" width="\${w}" height="\${h}" viewBox="0 0 \${w} \${h}">
     <defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#EDEEF0"/><stop offset="1" stop-color="#DADDE1"/></linearGradient></defs>
-    <rect width="${w}" height="${h}" fill="url(#g)"/>
-    <g transform="translate(${w / 2 - 16},${h / 2 - 30})" fill="none" stroke="#9CA3AF" stroke-width="1.8">
+    <rect width="\${w}" height="\${h}" fill="url(#g)"/>
+    <g transform="translate(\${w / 2 - 16},\${h / 2 - 30})" fill="none" stroke="#9CA3AF" stroke-width="1.8">
       <rect x="0" y="0" width="32" height="32" rx="4"/>
       <circle cx="9.5" cy="9.5" r="2.4" fill="#9CA3AF" stroke="none"/>
       <path d="M2 24l7.5-7.5 5.5 5.5 6.5-6.5 8.5 8.5"/>
     </g>
-    <text x="${w / 2}" y="${h / 2 + 36}" font-family="Menlo, Consolas, monospace" font-size="11" fill="#9CA3AF" text-anchor="middle">${short}</text>
-  </svg>`;
+    <text x="\${w / 2}" y="\${h / 2 + 36}" font-family="Menlo, Consolas, monospace" font-size="11" fill="#9CA3AF" text-anchor="middle">\${short}</text>
+  </svg>\`;
   return svgToDataUri(svg);
 }
 
