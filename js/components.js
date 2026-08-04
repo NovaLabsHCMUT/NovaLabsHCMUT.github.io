@@ -43,7 +43,7 @@ const HEADER_HTML = `
 <nav class="navbar">
   <div class="navbar-inner">
     <a href="index.html" class="logo">
-      <img src="asset/logo.jpg" alt="NovaLabs Logo" class="logo-img">
+      <img src="assets/logo.jpg" alt="NovaLabs Logo" class="logo-img">
     </a>
     <ul class="nav-links" id="navLinks">
       <li><a href="index.html" data-page="home">Trang chủ</a></li>
@@ -63,7 +63,7 @@ const FOOTER_HTML = `
     <div class="footer-top">
       <div class="footer-brand">
         <a href="index.html" class="logo">
-          <img src="asset/logo.jpg" alt="NovaLabs" class="logo-img">
+          <img src="assets/logo.jpg" alt="NovaLabs" class="logo-img">
         </a>
         <p>NovaLabs là phòng thí nghiệm robotics do sinh viên vận hành, trực thuộc Trường Đại học Bách Khoa - ĐHQG TP.HCM. Chúng tôi phát triển các dự án mã nguồn mở trong lĩnh vực Robot di động, Hệ thống nhúng, Điều khiển và Tự động hóa.</p>
         <div class="footer-tags">
