@@ -31,7 +31,7 @@ const PHONE_ICON_SVG =
 // swaps in a clean NovaLabs wordmark automatically if assets/logo.jpg is
 // missing, so the logo never just "disappears".
 const HEADER_HTML = `
-<div class="top-bar">
+<div class="top-bar" style="background-color: #000000;">
   <div class="top-bar-inner">
     <a href="mailto:${SITE_INFO.email}" class="top-bar-item">${EMAIL_ICON_SVG}${SITE_INFO.email}</a>
     <span class="top-bar-sep">|</span>
@@ -42,8 +42,9 @@ const HEADER_HTML = `
 </div>
 <nav class="navbar">
   <div class="navbar-inner">
-    <a href="index.html" class="logo">
-      <img src="assets/logo.jpg" alt="NovaLabs Logo" class="logo-img">
+    <a href="index.html" class="logo" style="display: flex; align-items: center; gap: 12px; text-decoration: none; color: #20242A;">
+      <img src="assets/logo.jpg" alt="NovaLabs Logo" class="logo-img" style="height: 65px; width: auto; max-height: none;">
+      <span style="font-size: 1.5rem; font-weight: 800; letter-spacing: 0.5px;">NOVALabs</span>
     </a>
     <ul class="nav-links" id="navLinks">
       <li><a href="index.html" data-page="home">Trang chủ</a></li>
