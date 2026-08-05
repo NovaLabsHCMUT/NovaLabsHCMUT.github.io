@@ -49,9 +49,9 @@ const HEADER_HTML = `
     <ul class="nav-links" id="navLinks">
       <li><a href="index.html" data-page="home">Trang chủ</a></li>
       <li><a href="about.html" data-page="about">Giới thiệu</a></li>
-      <li><a href="projects.html" data-page="projects">Dự án</a></li>
+      <li><a href="projects.html" data-page="projects" class="nav-cta">Dự án</a></li>
       <li><a href="services.html" data-page="services">Dịch vụ</a></li>
-      <li><a href="contact.html" data-page="contact" class="nav-cta">Liên hệ</a></li>
+      <li><a href="contact.html" data-page="contact">Liên hệ</a></li>
     </ul>
     <div class="hamburger" id="hamburger"><span></span><span></span><span></span></div>
   </div>
