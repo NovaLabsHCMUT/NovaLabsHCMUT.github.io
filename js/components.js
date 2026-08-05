@@ -12,7 +12,7 @@ const SITE_INFO = {
   khoaName: "Mr. Khoa",
   khoaPhone: "0989727191",
   khoaZaloLink: "https://zalo.me/84989727191",
-  hungName: "Mr. Hùng",
+  hungName: "Mr. Hung",
   hungPhone: "0375255155",
   hungZaloLink: "https://zalo.me/84375255155",
 };
